@@ -11,7 +11,7 @@ import {
 } from "recharts";
 
 export default function Chart(props) {
-  //---------------------------------------------------------------------------
+  //-------------------Declare-States---------------------------------------------------------
   const [reversedHistoricData, setReversedHistoricData] = React.useState([]);
   const [chartState, setChartState] = React.useState({
     open: true,
@@ -20,14 +20,14 @@ export default function Chart(props) {
     low: true,
     difference: false,
   });
-  //---------------------------------------------------------------------------
+  //-------------------set-reversedHistoricData---------------------------------------------------------
   React.useEffect(() => {
     const sorted = [...props.historicData].sort(
       (a, b) => new Date(a.date) - new Date(b.date)
     );
     setReversedHistoricData(sorted);
   }, [props.historicData]);
-  //---------------------------------------------------------------------------
+  //--------------------toggle-Graphs------------------------------------------------------
   function toggleChartState(property) {
     setChartState((prevState) => ({
       ...prevState,

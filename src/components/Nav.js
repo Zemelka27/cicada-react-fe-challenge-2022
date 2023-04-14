@@ -2,7 +2,7 @@ import "../styles/Nav.css";
 import React from "react";
 
 export default function Nav(props) {
-  //-----------------------------------------------------------------------------------
+  //-------------------Declare-Styles---------------------------------------------------------
   const stylesActive = {
     color: "white",
     background: "#2D3748",
@@ -12,7 +12,7 @@ export default function Nav(props) {
     color: "grey",
     background: "#202837",
   };
-  //-----------------------------------------------------------------------------------
+  //--------------------create-Elements--------------------------------------------------------------
   const nav = props.pairsData.map((pair) => (
     <div
       className="nav--item"

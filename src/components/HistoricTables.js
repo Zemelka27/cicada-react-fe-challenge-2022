@@ -2,7 +2,7 @@ import "../styles/HistoricTables.css";
 import React from "react";
 
 export default function HistoricTables(props) {
-  //-----------------------------------------------------------------------------------
+  //-------------------Declare-States---------------------------------------------------------
   const [sortedHistoricData, setSortedHistoricData] = React.useState([]);
   const [sortedDailyData, setSortedDailyData] = React.useState([]);
   const [historicTableState, setHistoricTableState] = React.useState({
@@ -18,15 +18,15 @@ export default function HistoricTables(props) {
     difference: false,
     currentProperty: "date",
   });
-  //-----------------------------------------------------------------------------------
+  //-----------------------Set-sortedHistoricData----------------------------------------------------------
   React.useEffect(() => {
     setSortedHistoricData(props.historicData);
   }, [props.historicData]);
-  //-----------------------------------------------------------------------------------
+  //-----------------------Set-sortedDailyData----------------------------------------------------------
   React.useEffect(() => {
     setSortedDailyData(props.historicData);
   }, [props.historicData]);
-  //-----------------------------------------------------------------------------------
+  //------------------------Toggle-&-Sort-Historic-Data-------------------------------------------------------
   function sortHistoricData(property) {
     // eslint-disable-next-line array-callback-return
     const sorted = [...props.historicData].sort((a, b) => {
@@ -57,7 +57,7 @@ export default function HistoricTables(props) {
       currentProperty: property,
     }));
   }
-  //-----------------------------------------------------------------------------------
+  //------------------------Toggle-&-Sort-Daily-Data-------------------------------------------------------
   function sortDailyData(property) {
     // eslint-disable-next-line array-callback-return
     const sorted = [...props.historicData].sort((a, b) => {
@@ -94,7 +94,7 @@ export default function HistoricTables(props) {
       currentProperty: property,
     }));
   }
-  //-----------------------------------------------------------------------------------
+  //--------------------------create-Historic-Table-Element-------------------------------------------------------
   const historicPricesDivs = sortedHistoricData.map((data) => (
     <div className="table--items--grid table--items--grid--hp" key={data.date}>
       <div>{data.date}</div>
@@ -102,7 +102,7 @@ export default function HistoricTables(props) {
       <div>{data.low}</div>
     </div>
   ));
-  //-----------------------------------------------------------------------------------
+  //--------------------------create-Daily-Table-Element-------------------------------------------------------
   const dailyTrendDivs = sortedDailyData.map((data) => {
     const roundedDifference = data.difference.toFixed(5);
     return (

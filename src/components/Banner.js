@@ -2,9 +2,9 @@ import "../styles/Banner.css";
 import React from "react";
 
 export default function Banner(props) {
-  //---------------------------------------------------------------------------
+  //-------------------Declare-States---------------------------------------------------------
   const [currentData, setCurrentData] = React.useState({});
-  //---------------------------------------------------------------------------
+  //-------------------set-currentData---------------------------------------------------------
   React.useEffect(() => {
     const result = props.mergedData.find(
       ({ id }) => id === props.currentPairId
