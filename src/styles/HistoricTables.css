@@ -1,0 +1,90 @@
+.tables--grid {
+  display: grid;
+  grid-template-areas: "A B";
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
+}
+
+.table--container {
+  /* border: 1px solid grey; */
+  padding: 20px;
+  background: #202837;
+}
+
+.table--title {
+  font-size: 25px;
+  padding-bottom: 20px;
+  background: #202837;
+  color: white;
+  text-align: center;
+}
+
+.table--items--wrapper {
+  height: 320px;
+  overflow: scroll;
+  padding: 0px 20px 0px 20px;
+  background: black;
+}
+
+.table--labels--wrapper {
+  background: #2d3748;
+  padding: 0px 20px 0px 20px;
+}
+
+.table--items--grid {
+  display: grid;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid grey;
+  background: black;
+  color: grey;
+  text-align: center;
+}
+
+.table--labels {
+  background: #2d3748;
+  color: white;
+  border-bottom: 2px solid grey;
+}
+
+.table--items--grid--hp {
+  grid-template-areas: "A B C";
+  grid-template-columns: 33% 33% 33%;
+}
+
+.table--items--grid--dt {
+  grid-template-areas: "A B C D";
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.table--sorting--button {
+  background: #202837;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 10px;
+}
+
+@media (max-width: 1000px) {
+  .tables--grid {
+    grid-template-areas: "A" "B";
+    grid-template-columns: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .table--labels--wrapper {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .table--sorting--button {
+    font-size: 10px;
+    padding: 12px;
+    margin: 5px;
+  }
+  img {
+    width: 7px;
+  }
+}

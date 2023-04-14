@@ -1,0 +1,38 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: black;
+  border: 1px solid grey;
+  color: white;
+  justify-content: space-between;
+  margin: 30px 0px 30px 0px;
+  width: 100%;
+}
+
+.banner--item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0px 0px 10px 20px;
+  border-left: 1px solid grey;
+}
+
+.banner--item--label {
+  color: grey;
+  font-size: 13px;
+  padding: 10px 0px 10px 0px;
+  font-weight: bold;
+}
+
+.banner--item--value {
+  font-size: 19px;
+}
+.banner--item--green {
+  color: #00ffc4;
+}
+
+.banner--item--currency {
+  border-left: 2px solid #00ffc4;
+  font-weight: bold;
+}
