@@ -35,7 +35,6 @@ export default function Chart(props) {
     }));
   }
   //---------------------------------------------------------------------------
-
   return (
     <div className="chart--wrapper">
       <div className="chart--button--container">

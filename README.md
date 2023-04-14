@@ -1,6 +1,37 @@
-# Getting Started with FE Challenge 2022
+# Cicada FE Challenge 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that displays trading information in various forms, including a graphical one by using the Recharts library.
+
+## Objective
+
+The objective of this app is to fetch data from a Web Socket and some APIs to display it using various components. The application is responsive and visually appealing.
+
+## Technologies Used
+
+- Node.js (https://nodejs.org/en)
+- React (https://react.dev/)
+- Recharts (https://recharts.org/en-US/)
+
+## Installation
+
+To run this app on your local machine, follow these steps:
+
+1. Clone this repository using `git clone https://github.com/Zemelka27/cicada-react-fe-challenge-2022.git`.
+2. Change your current directory to the project directory using `cd react-cicada-fe-challenge-20222`.
+3. Install dependencies by running `npm install`.
+4. Run the app using `npm start`.
+
+## Usage
+
+ The user can switch between the different currency pair, which will display information according to it. The banner displays real time information which changes every 3-5 seconds, the tables can be sorted according to different parameters, and the graphs can be activated or deactivated in order to take advantage of the GUIs real estate, also while hovering over the graphs the user is able to see detailed information of every single point on it.
+
+## Screenshot
+
+![Screenshot 1](/public/assets/screenshot.png)
+
+<!-- ## Live Demo
+
+You can view a live demo of this app [here](https://your-username.github.io/react-recharts-app). -->
 
 ## Available Scripts
 
