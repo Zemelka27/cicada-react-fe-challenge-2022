@@ -1,6 +1,7 @@
 # Cicada FE Challenge 2022
 
 This is a React application that displays trading information in various forms, including a graphical one by using the Recharts library.
+Challenge description: https://mtrade.notion.site/FE-Developer-Challenge-Sept-2022-233ab0fd31aa4019b7bb14930e4c5a2b
 
 ## Objective
 
