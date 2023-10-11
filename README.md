@@ -21,6 +21,7 @@ To run this app on your local machine, follow these steps:
 2. Change your current directory to the project directory using `cd react-cicada-fe-challenge-20222`.
 3. Install dependencies by running `npm install`.
 4. Run the app using `npm start`.
+5. IN ORDER FOR THE APP TO PROPERLY WORK, YOU WILL HAVE TO DISABLE "HTTPS ONLY" IN YOU BROWSER, SINCE THE WEBSOCKET DOES NOT HAVE A CERTIFICATION.   
 
 ## Usage
 
